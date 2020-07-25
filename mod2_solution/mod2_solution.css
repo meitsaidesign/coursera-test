@@ -15,8 +15,8 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
-	border: 1px solid black;
+	font-size: 18px;
+	border: 2px solid black;
 	width: 200px;
 	text-align: center;
 	float: right;
@@ -27,11 +27,11 @@ h2 {
 
 
 p {
-	border: 1px solid black;
+	border: 2px solid black;
 	height: 150px;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 50px;
+	padding-top: 40px;
 	margin-top: 0;
 }
 
@@ -62,7 +62,7 @@ p {
 
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
 	.col-md-3, .col-md-4, .col-md-6, .col-md-7 {
 		float: left;
 		padding: 10px;
@@ -80,3 +80,14 @@ p {
 		width: 100%;
 	}
 }
+
+@media (max-width: 979px) {
+	.col-sm-7 {
+		float: left;
+		padding: 10px;
+	}
+	.col-sm-7 {
+		width: 100%;
+	}
+}
+
