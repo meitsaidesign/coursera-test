@@ -1,5 +1,4 @@
 body {
-	font-size: 16px;
 	color: #fff;
 	background-color: #B4A0C2;
 	font-family: 'Noto Sans KR', sans-serif;
@@ -110,11 +109,20 @@ body {
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (min-width: 409) and (max-width: 767px) {
 
 	.menu-item-tile {
 		width: 360px;
 		margin: auto;
 		margin-top: 30px;
 			}
+}
+
+/***** Extra Extra small devices only ********/
+@media (max-width: 408) {
+	.menu-item-tile {
+		width: 300px;
+		margin: auto;
+		margin-top: 30px;
+	}
 }
