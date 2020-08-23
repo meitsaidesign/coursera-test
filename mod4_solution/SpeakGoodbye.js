@@ -1,20 +1,10 @@
 (function (window) {
 
-	var byeSpeaker = {};
-	
-
-	
-	byeSpeaker.name = ["John", "Jen", "Jason", "Jim"];
-	var speakWord = "Good Bye";
-
-	byeSpeaker.SayGoodbye = function () {
-	for (var i = 0; i < byeSpeaker.name.length; i++) {
-  console.log(speakWord + " " + byeSpeaker.name[i]);
-}
-
-
-}
-
+	var byeSpeaker = new Object();
+    var speakWord = "Good Bye";
+    byeSpeaker.speak = function (name) {
+        console.log(speakWord + " " + name);
+    };
 window.byeSpeaker = byeSpeaker;
 
 })(window);

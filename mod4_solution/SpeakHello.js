@@ -1,14 +1,9 @@
 (function (window) {
 
-	var helloSpeaker = {};	
-	helloSpeaker.name = ["Yaakov", "Paul", "Frank", "Larry", "Paula", "Laura",];
-	var speakWord = "Hello ";
-	helloSpeaker.SayHello = function () {
-	for (var i = 0; i < helloSpeaker.name.length; i++) {
-  console.log(speakWord + " " + helloSpeaker.name[i]);
-}
-
-	
-}
+	 var helloSpeaker = new Object();
+    var speakWord = "Hello";
+    helloSpeaker.speak = function(name) {
+        console.log(speakWord + " " + name);
+    };
 	window.helloSpeaker = helloSpeaker;
 })(window);
